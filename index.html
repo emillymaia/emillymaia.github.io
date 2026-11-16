@@ -1,294 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Emilly Maia" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Emilly Maia, Emilly Pereira Maia, Emilly, Maia"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Emilly Maia</title>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emilly Maia · IA & Automação</title>
+  <meta name="description" content="Portfólio de Emilly Maia — Business Process Analyst e AI Automation Engineer. Agentes de IA, LLMs e automação de processos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  </head>
+  <!-- ===================== HERO ===================== -->
+  <div class="frame" id="inicio">
+    <svg class="deco c-pink spin" style="width:120px;height:120px;top:-55px;right:-45px;" aria-hidden="true"><use href="#star8"/></svg>
+    <svg class="deco c-red hide-sm" style="width:110px;height:130px;bottom:-60px;left:-55px;" aria-hidden="true"><use href="#loop"/></svg>
+    <svg class="deco c-purple float hide-sm" style="width:46px;height:46px;bottom:-24px;left:340px;" aria-hidden="true"><use href="#sparkle"/></svg>
 
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">EMILLY MAIA</span>
-          <span class="site-description">Programmer • Mobile Developer • Product Development</span>
-        </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/emilly-maia-dev/">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/emillymaia">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:emillymaia.dev@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
+    <div class="frame-inner">
+      <svg class="deco c-plum scallop" style="" aria-hidden="true"><use href="#scallop"/></svg>
+      <svg class="deco c-pink spin rev" style="width:38px;height:38px;top:250px;right:520px;" aria-hidden="true"><use href="#star8"/></svg>
+      <header class="header">
+        <button class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <a class="logo" href="#inicio"><b>Emilly</b><span>Maia</span></a>
+        <nav class="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#skills">Skills</a>
+        </nav>
+        <div class="mobile-nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#skills">Skills</a>
         </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+      </header>
+
+      <section class="hero">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/emilly-maia-dev/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://github.com/emillymaia" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></svg>
+          </a>
+          <a href="mailto:emillymaia.dev@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm10 8.2L2.4 6H2v.5l10 6.4 10-6.4V6h-.4L12 12.2z"/></svg>
+          </a>
         </div>
-      </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
+        <div class="hero-text">
+          <h1>Emilly <span class="grad-text">Maia</span></h1>
+          <p class="role">AI Automation Engineer & Business Process Analyst</p>
+          <p class="sub">Transformo processos manuais em fluxos inteligentes com agentes de IA, LLMs e automação!</p>
+          <a class="btn" href="#projetos">Ver projetos</a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit-wrap">
+            <div class="ring r2">
+              <span class="node" style="top:0%; left:50%;">LangChain</span>
+              <span class="node" style="top:50%; left:100%;">Langfuse</span>
+              <span class="node" style="top:100%; left:50%;">SQL</span>
+              <span class="node" style="top:50%; left:0%;">BPMN</span>
+            </div>
+            <div class="ring r1">
+              <span class="node" style="top:6%; left:25%;">LLM Agents</span>
+              <span class="node" style="top:25%; left:94%;">RAG</span>
+              <span class="node" style="top:94%; left:75%;">N8N</span>
+              <span class="node" style="top:75%; left:6%;">Python</span>
+            </div>
+            <div class="core"><div><span>AI</span><small>AUTOMATION</small></div></div>
+          </div>
+        </div>
+
+        <a class="scroll-down" href="#sobre"><span>scroll down</span><i>⌄</i></a>
+      </section>
     </div>
+  </div>
 
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.png"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          Woman, activist, LGBTQIA+ and inserted in the world of technology! I am a 21 y.o. with a passion for 
-          exciting projects. I'm studying my third year of Computer Science at the Federal Institute of Education, 
-          Science and Technology of Ceará (IFCE), pursuing an undergraduate degree.. I also currently study Mobile iOS 
-          development at the Apple Developer Academy and I work as an iOS and Android Programming Tutor at the 
-          Institute of Management, Networks and Technologies (iREDE). I am interested in exploring the areas 
-          of Software Engineering, Product Development, and I am open to opportunities for the same!
-        </p>
-      </div>
+  <!-- ===================== FAIXA ===================== -->
+  <div class="band" aria-hidden="true">
+    <div class="band-track" id="band-track">
+      <span>Agentes de IA</span><svg><use href="#star8"/></svg>
+      <span>Automação</span><svg><use href="#star8"/></svg>
+      <span>Processos</span><svg><use href="#star8"/></svg>
+      <span>Dados</span><svg><use href="#star8"/></svg>
+      <span>LLMs</span><svg><use href="#star8"/></svg>
+    </div>
+  </div>
 
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-flutter-plain colored"></i>
-          <i class="devicon-dart-plain-wordmark colored"></i>
-          <i class="devicon-kotlin-plain-wordmark colored"></i>
-          <i class="devicon-swift-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <p>My favorite languages for systems programming and software engineering.</p>
-        </div>
+  <!-- ===================== CONTEÚDO ===================== -->
+  <div class="frame frame-gap">
+    <svg class="deco c-cream float hide-sm" style="width:40px;height:40px;top:180px;left:-20px;" aria-hidden="true"><use href="#sparkle"/></svg>
+    <div class="frame-inner">
 
-        <!-- Technology Stack #2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-vuejs-plain-wordmark colored"></i>
-
-          <p>My preferred technologies for front-end web development and component design.</p>
-        </div>
-
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-github-plain colored"></i>
-          <i class="devicon-trello-plain colored"></i>
-          <i class="devicon-intellij-plain-wordmark colored"></i>
-          <i class="devicon-xcode-plain colored"></i>
-          <i class="devicon-jira-plain colored"></i>
-          <p>My favorite tools for version control, code editing and documentation of the product creation process.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="user-details">
-        <h1>Featured Projects</h1>
-      </div>
-
-      <!-- User Project #1: Personal Résumé Website -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/KairaApp.webp" alt="Kaira Mobile App" />
-            <img alt="Kaira Mobile App" src="./assets/img/jpg/KairaApp.png" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Kaira</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/appstore.svg"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/swift.svg"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/xcode.svg" />
+      <!-- Sobre -->
+      <section class="section" id="sobre">
+        <div class="about">
+          <div class="photo-wrap reveal">
+            <svg class="deco c-plum blob" style="" aria-hidden="true"><use href="#blob"/></svg>
+            <div class="photo">
+              <img src="assets/foto.png" alt="Ilustração em pixel art de Emilly Maia" />
+            </div>
+            <svg class="deco c-pink star spin" style="" aria-hidden="true"><use href="#star8"/></svg>
+            <svg class="deco c-red coil" style="" aria-hidden="true"><use href="#coil"/></svg>
           </div>
-          <p style="text-align: justify">
-            Have you ever imagined what it would be like to relive the most memorable 
-            moments of your life? You can now embark on this experience with Kaira! 
-            In this interactive story created using UIKit, SpriteKit, and various relaxing 
-            games, you will uncover the entire journey of one of the greatest travelers you've ever 
-            seen. Designed for reliving, relaxing, and enjoying.
-          </p>
-          <a class="project-link" target="_blank" href="https://apps.apple.com/br/app/kaira/id6466660925">Check it out!</a>
-        </div>
-      </div>
-
-      <!-- User Project #2: Summer 2020 Project -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/BuddyCareApp.webp" alt="Perpetual Crusades" />
-            <img alt="Perpetual Crusades" src="./assets/img/jpg/BuddyCareApp.png" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>BuddyCare</h3>
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/swift.svg"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/xcode.svg"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          <p style="text-align: justify">
-            How much attention have you been giving to your buddy? BuddyCare helps you improve 
-            that! Get personalized daily reminders to play, remember hygiene maintenance, and 
-            interact with your virtual pet. Built with SwiftUI, CloudKit, and offering support
-             for iOS and WatchOS, remembering your pet even when you're away has never been 
-             so easy.
-          </p>
-          <a class="project-link" target="_blank" href="https://apps.apple.com/br/app/buddycare-app/id6450461952"
-            >Check it out!</a
-          >
-        </div>
-      </div>
-
-      <!-- User Project #3: COVID-19 Tracker App -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/SmelliciousApp.webp" alt="COVID-19 Tracker App" />
-            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/SmelliciousApp.png" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Smellicious</h3>
-          <div>
-            <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/appstore.svg"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/swift.svg"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/xcode.svg" />
+          <div class="reveal">
+            <span class="pill"><svg><use href="#star8"/></svg>sobre mim</span>
+            <h2 class="section-title">Oi, prazer!</h2>
+            <h3>Sou desenvolvedora, analista de processos e crio <span class="accent">Automações com Inteligência artificial!</span></h3>
+            <p>Inserida no mundo tech desde 2020, atualmente trabalho com desenvolvimento focado em automação, inteligência artificial e processos. Como AI Automation Engineer, combino mapeamento e melhoria de processos com análise de dados e desenvolvimento de automação com IA — agentes LLM, N8N e Python.</p>
+            <p>Identifico gargalos, meço resultados e elimino trabalho manual. Monitoro fluxos em produção com plataformas como Langfuse, investigo falhas e apresento resultados e planos de ação para stakeholders e liderança. Antes disso, fui Desenvolvedora iOS, então a paixão por experiência de usuário, usabilidade, arquitetura e padrões de projeto ainda corre na veia!</p>
+            <div class="meta">
+              <span class="chip">📍 Brasil</span>
+              <span class="chip">🎓 Ciência da Computação · Instituto Federal de Educação, Ciência e Tecnologia do Ceará</span>
+              <span class="chip">🌎 Inglês avançado</span>
+            </div>
           </div>
-          <p style="text-align: justify">
-            Aromatherapy is a method used by thousands of people around the world. 
-            Smellicious is a simple and comforting app created with the intention of 
-            guiding you in blending essential oils, offering an interactive, informative, 
-            and delightful experience.
-          </p>
-          <a class="project-link" target="_blank" href="https://apps.apple.com/br/app/smellicious/id6445817946">
-            Check it out!
-          </a>
         </div>
-      </div>
 
-      <!-- Use Project #4: Valuto: Account Management System -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/webp/WeCareApp.webp"
-              alt="Valuto: Account Management System"
-            />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/WeCareApp.png" />
-          </picture>
+        <div class="stats">
+          <div class="stat reveal"><strong>4h → 3min</strong><span>processo operacional automatizado</span></div>
+          <div class="stat reveal"><strong>400h+</strong><span>liberadas por mês para o time</span></div>
+          <div class="stat reveal"><strong>10+</strong><span>apps iOS desenvolvidos, 3 na App Store</span></div>
         </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>WeCare</h3>
-          <div>
-            <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/swift.svg"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/xcode.svg" />
+      </section>
+
+      <!-- Projetos -->
+      <section class="section" id="projetos">
+        <span class="pill reveal"><svg><use href="#star8"/></svg>projetos</span>
+        <h2 class="section-title reveal">Projetos em destaque</h2>
+        <p class="section-lead reveal">Projetos privados em que atuei com IA e automação. Por serem confidenciais, descrevo o problema, minha atuação e os resultados — sem expor dados sensíveis.</p>
+        <div class="projects-list" id="projects-grid"></div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="skills-head">
+          <span class="pill reveal"><svg><use href="#star8"/></svg>skills</span>
+          <h2 class="section-title reveal">Minhas skills</h2>
+          <p class="section-lead reveal">Ferramentas e linguagens que uso no dia a dia para construir agentes, automações e análises.</p>
+        </div>
+        <div class="skills-icons reveal">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/python.svg" alt="" />Python</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/langchain.svg" alt="" />LangChain</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/n8n.svg" alt="" />N8N</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg" alt="" />LLMs</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/make.svg" alt="" />Make</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/redash.svg" alt="" />Redash</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/postgresql.svg" alt="" />SQL</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/javascript.svg" alt="" />JavaScript</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/nodedotjs.svg" alt="" />Node.js</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/docker.svg" alt="" />Docker</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/git.svg" alt="" />Git</div>
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/swift.svg" alt="" />Swift</div>
+        </div>
+
+        <div class="skill-groups">
+          <div class="skill-group reveal">
+            <h4>IA & Automação</h4>
+            <ul><li>AI Agents</li><li>LLMs</li><li>Arquitetura Multiagente</li><li>RAG</li><li>Tool Calling</li><li>Engenharia de Prompt</li><li>LangChain</li><li>LangFlow</li><li>N8N</li><li>Make</li><li>LLM as a Judge</li><li>Langfuse</li></ul>
           </div>
-          <p style="text-align: justify">
-            The routine of basic skincare is often overlooked by many people because it seems 
-            complicated. WeCare is an app developed to adapt the facial care routine according
-             to the temperature and weather changes. Made using UIKit, CoreData, and WeatherKit, 
-             the app tracks the weather in real-time and creates personalized alerts.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/yago-marques/WeCare">
-            Check it out!
-          </a>
+          <div class="skill-group reveal">
+            <h4>Processos</h4>
+            <ul><li>BPMN</li><li>Análise de Causa Raiz</li><li>PDCA</li><li>5S</li><li>SWOT</li><li>Planos de Ação</li><li>Documentação de Workflows</li><li>Treinamentos</li><li>Scrum</li><li>Kanban</li><li>Jira</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Dados & Desenvolvimento</h4>
+            <ul><li>SQL</li><li>PostgreSQL</li><li>Redash</li><li>Dashboards & KPIs</li><li>Testes A/B</li><li>Python</li><li>JavaScript</li><li>Ruby</li><li>Node.js</li><li>APIs REST</li><li>Docker</li><li>AWS</li><li>CI/CD</li><li>Swift / SwiftUI / UIKit</li></ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-      <p>&copy; Based on A. Vikram Singh template</p>
-    </footer>
+      <footer class="footer">© <span id="year"></span> Emilly Maia · Todos os direitos reservados</footer>
+    </div>
+  </div>
 
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <script src="js/deco.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>

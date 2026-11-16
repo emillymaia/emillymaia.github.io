@@ -1,12 +1,28 @@
-# <a href="https://people.umass.edu/avsingh" target="_blank">My Alternate Portfolio Website</a>
+# Portfólio — Emilly Maia
 
-[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/AVS1508/My-Alternate-Portfolio-Website/)
-[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://people.umass.edu/avsingh)
-[![Author](https://img.shields.io/badge/Author-Aditya%20Vikram%20Singh-blue.svg)](https://www.linkedin.com/in/AVS1508/)
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-13%20June%202021-yellow.svg)](https://github.com/AVS1508/My-Alternate-Portfolio-Website/commit/master)
+Site estático (HTML + CSS + JS puro), pronto para o GitHub Pages.
 
- <p align="justify">This website serves as an online portfolio to showcase my web presence, résumé, story, & featured projects with a Particle.js aligned theme. It was generated using using Jekyll, Sass, and Gulp.js.</p>
+## Estrutura
 
-![My Alternate Portfolio Website](https://raw.githubusercontent.com/AVS1508/My-Alternate-Portfolio-Website/master/My-Alternate-Portfolio-Website.jpg)
+```
+index.html        Página principal (hero, sobre, projetos, skills, experiência, contato)
+projeto.html      Página de detalhe — lê ?id=<id do projeto>
+css/style.css     Estilos
+js/projects.js    ⭐ Dados de todos os projetos (edite aqui)
+js/main.js        Cubos 3D, cards, menu, animações, formulário
+js/project.js     Monta a página de detalhe
+assets/           Imagens (ex.: assets/foto.jpg)
+```
 
-Please hit me up at avsingh@umass.edu if you have any feedback or ideas for the website. Leave a :star: &nbsp;if you like it!
+## Rodar localmente
+
+```bash
+cd portfolio && python3 -m http.server 5500
+```
+
+Abra http://localhost:5500
+
+## Adicionar um projeto
+
+Copie um objeto em `js/projects.js`, troque o `id` e preencha os campos.
+O card e a página `projeto.html?id=...` aparecem automaticamente.
