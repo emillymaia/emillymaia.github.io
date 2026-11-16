@@ -554,3 +554,5 @@ aside .note { font-size: 0.8rem; color: var(--muted); border-top: 1px solid #332
 /* foto em pixel art: sem filtro e sem suavização */
 .photo-wrap .photo { background: transparent; border-radius: 0; overflow: visible; }
 .photo-wrap .photo img { filter: none; image-rendering: pixelated; object-fit: contain; object-position: center bottom; }
+
+@media (max-width: 1100px) { .deco.hero-star { display: none; } }
